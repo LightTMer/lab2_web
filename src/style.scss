@@ -1,0 +1,19 @@
+
+@import "~bootstrap/scss/bootstrap";
+@import "root";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.double{
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.foot-row{
+    display: flex;
+    margin-top: 40px;
+    height: 20px;
+    width: 90%;
+    padding: 50px;
+}
+

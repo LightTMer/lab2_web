@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="d-flex flex-column">
+  <header class="bg-info">
+      <div class="container">
+          <div class="nav nav-extend-md align-items-center">
+              <a href="#" target="_blank"><img src="/src/img/logo.png" alt="" class="logo" width="100"></a>
+              <a class="h-20 ms-4 link-dark" href="#" target="_blank">Рекурсия</a>
+              <button onclick="notEmplErr.show()" class="btn btn-dark ms-auto">
+                  Нажми на породу
+              </button>
+              <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+                  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                          <p><i class="fa fa-spinner fa-pulse fa-3x"></i></p>
+                          <strong class="me-auto">Функционал</strong>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                          Функионал временно недоступен
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <section class="section">
+      <div class="container mb-5">
+        <blockquote class="blockquote text-center">
+            <h2 class = "mb-0 p-3">Породы кошек</h2>
+        </blockquote>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+              <div class="col mb-5">
+                  <div class="card" data-bs-toggle="modal" data-bs-num="0"
+                      data-bs-target="#exampleModal">
+                      <img class="card-img-top img-fluid" src="https://natalyland.ru/wp-content/uploads/d/b/1/db1aa55bcf8ba79429ae0881b9c3aca1.jpeg" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title">Манчкин</h5>
+                          <p class="card-text">Это современная порода кошек. При средней длине тела их лапы короче, чем у обычных кошек в 2-3 раза. В отличие от обычных кошек, которые, чтобы осмотреться, встают на задние лапы, манчкин садится на седалище и крепко упирается хвостом. В таком положении кошки могут находиться в течение довольно продолжительного времени.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card" data-bs-toggle="modal" data-bs-num="1"
+                      data-bs-target="#exampleModal">
+                      <img class="card-img-top img-fluid" src="https://funart.pro/uploads/posts/2022-06/1654212834_69-funart-pro-p-goluboi-britanets-kot-visloukhii-zhivotnie-72.jpg" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title">Шотландская вислоухая кошка</h5>
+                          <p class="card-text">Порода домашних кошек с характерными загнутыми вперёд и вниз ушами, что вызвано действием доминантного гена, который возник в результате естественной мутации и оказывающий влияние на хрящи во всём организме. Это придаёт голове кошки характерный вид, которую часто описывают как «похожую на совиную».</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card" data-bs-toggle="modal" data-bs-num="3"
+                      data-bs-target="#exampleModal">
+                      <img class="card-img-top img-fluid" src="https://klike.net/uploads/posts/2023-01/1674113131_3-54.jpg" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title">Мейн-кун</h5>
+                          <p class="card-text">Мейн-ку́н (англ. Maine Coon) — порода кошек, которая произошла от кошек штата Мэн на северо-востоке США. Аборигенная порода кошек Северной Америки.
+                            Название «мейн-кун» является производным от двух слов. Первое — это название штата Мэн, а второе — производное от англ. racoon, которое переводится как «енот». Старейшая американская порода кошек. Является официальным символом штата Мэн.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card" data-bs-toggle="modal" data-bs-num="4"
+                      data-bs-target="#exampleModal">
+                      <img class="card-img-top img-fluid" src="https://oir.mobi/uploads/posts/2021-05/1620241832_36-oir_mobi-p-britanskaya-korotkoshyorstnaya-koshka-golu-39.jpg" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title">Британская  короткошёрстная кошка</h5>
+                          <p class="card-text">Порода домашней кошки. По одной версии является потомком породы Шартрез, а по другой, римских кошек и местных сородичей.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card" data-bs-toggle="modal" data-bs-num="5"
+                      data-bs-target="#exampleModal">
+                      <img class="card-img-top img-fluid" src="https://funart.pro/uploads/posts/2021-07/1625919083_29-funart-pro-p-goluboi-kanadskii-sfinks-zhivotnie-krasivo-33.jpg" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title">Сфинкс</h5>
+                          <p class="card-text">Одна из нескольких бесшерстных пород кошек. При выведении породы была закреплена естественная рецессивная мутация, приводящая к отсутствию шерсти - hr. В нынешний момент это полностью сформированная и достаточно стабильная порода с 50-летним стажем, передающая свои признаки по рецессивному типу. </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+        <div class="footere">
+            <div class="foot-row mb-5 p-5">
+                    <hr>Ершов Александр Андреевич гр.02-1</hr>
+            </div>
+        </div>
+    </footer>
+    <!-- Модальное окно -->
+  <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="BullyLabel">Информация</h5>
+              </div>
+              <div class="modal-body"></div>
+          </div>
+      </div>
+  </div>
+  <script type = "module" src="./src/script.js"></script>
+</body>
+</html>
